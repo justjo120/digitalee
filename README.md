@@ -1,6 +1,6 @@
-# sentinel
+# DigitaLee LLC
 
-> Operation Sentinel
+> DigitaLee LLC Website
 
 ## Build Setup
 

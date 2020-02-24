@@ -1,8 +1,8 @@
 {
-  "name": "sentinel",
+  "name": "digitalee",
   "version": "1.0.0",
-  "description": "Operation Sentinel",
-  "author": "Kelvin Lee",
+  "description": "DigitaLee Website",
+  "author": "Johanna Lee",
   "private": true,
   "scripts": {
     "dev": "nuxt-ts",
