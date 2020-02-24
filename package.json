@@ -16,12 +16,6 @@
     "*.{js,vue,ts}": "npm run lint",
     "*.{css,vue,scss}": "stylelint"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "commit-msg": "validate-commit-msg"
-    }
-  },
   "dependencies": {
     "@nuxt/typescript-runtime": "^0.3.9",
     "@nuxtjs/axios": "^5.9.5",

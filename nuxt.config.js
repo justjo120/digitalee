@@ -19,7 +19,7 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Asap&display=swap' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Asap&display' }
     ]
   },
   /*
@@ -29,7 +29,8 @@ export default {
   /*
    ** Global CSS
    */
-  css: [],
+  css: [
+  ],
   /*
    ** Plugins to load before mounting the App
    */
@@ -62,12 +63,21 @@ export default {
    ** See https://axios.nuxtjs.org/options
    */
   axios: {},
+  webfontloader: {
+    google: {
+      families: ['Asap']
+    },
+  },
   /*
    ** vuetify module configuration
    ** https://github.com/nuxt-community/vuetify-module
    */
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
+    defaultAssets: {
+      fonts: false,
+    },
+    treeShake: true,
     theme: {
       dark: true,
       themes: {
