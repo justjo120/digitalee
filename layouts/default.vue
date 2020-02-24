@@ -1,5 +1,6 @@
 <template>
   <v-app dark>
+    <v-img src="https://images.pexels.com/photos/1320684/pexels-photo-1320684.jpeg" />
     <v-content>
       <v-sheet>
         <v-card elevation="0" align-center>
@@ -10,15 +11,15 @@
           </v-card-title>
           <v-divider class="mx-5" />
           <v-card-subtitle class="d-flex justify-center">
-            <div class="headline">
-              Navigating the Digital World
+            <div class="headline text-xs-center">
+              Helping You Navigate the Digital World
             </div>
           </v-card-subtitle>
           <nuxt />
         </v-card>
       </v-sheet>
     </v-content>
-    <v-footer app>
+    <v-footer app class="text-xs-center">
       <span>&copy; DigitaLee LLC {{ new Date().getFullYear() }}</span>
     </v-footer>
   </v-app>
@@ -51,3 +52,8 @@ export default {
   }
 };
 </script>
+<style>
+html {
+  font-family: 'Asap', sans-serif;
+}
+</style>
