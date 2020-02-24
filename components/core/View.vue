@@ -11,11 +11,11 @@
 <script>
 export default {
   components: {
-    AboutMe: () => import("@/components/AboutMe"),
-    GetInTouch: () => import("@/components/GetInTouch"),
+    AboutMe: () => import('@/components/AboutMe'),
+    GetInTouch: () => import('@/components/GetInTouch'),
 
-    Services: () => import("@/components/Services"),
-    Welcome: () => import("@/components/Welcome")
+    Services: () => import('@/components/Services'),
+    Welcome: () => import('@/components/Welcome')
   }
 };
 </script>

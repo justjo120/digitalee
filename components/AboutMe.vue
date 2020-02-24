@@ -3,18 +3,22 @@
     <v-layout white>
       <v-flex xs12 md6 pa-5>
         <base-bubble-1 style="transform: translate(5%, -5%)" />
-        <base-heading class="info--text">About Me</base-heading>
+        <base-heading class="info--text">
+          About Me
+        </base-heading>
 
         <base-text class="mb-5">
           Lorem ipsum dolor sit amet, consectetur adipi
-          <br />scin elit. Etiam vulputate augue vel felis gravida
-          <br />porta. Lorem ipsum dolor sit amet.
+          <br>scin elit. Etiam vulputate augue vel felis gravida
+          <br>porta. Lorem ipsum dolor sit amet.
         </base-text>
 
-        <base-subheading class="info--text">Skills</base-subheading>
+        <base-subheading class="info--text">
+          Skills
+        </base-subheading>
         <base-text class="mb-5">
           Lorem ipsum dolor sit amet, consecte tur adipi scin e
-          <br />lit. Etiam vulputate augu e vel felis gravida porta.
+          <br>lit. Etiam vulputate augu e vel felis gravida porta.
         </base-text>
 
         <v-alert outlined color="info">
@@ -40,15 +44,15 @@ export default {
   data: () => ({
     skills: [
       {
-        name: "Web Design",
+        name: 'Web Design',
         value: 100
       },
       {
-        name: "Web Development",
+        name: 'Web Development',
         value: 75
       },
       {
-        name: "Web Support",
+        name: 'Web Support',
         value: 90
       }
     ]

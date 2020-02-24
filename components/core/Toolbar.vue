@@ -1,4 +1,4 @@
-  
+
 <template>
   <v-toolbar v-scroll="onScroll" :color="isTransparent ? 'transparent' : '#F5F5F5'" app flat>
     <v-spacer />
@@ -9,13 +9,13 @@
 <script>
 export default {
   components: {
-    SocialMedia: () => import("@/components/SocialMedia")
+    SocialMedia: () => import('@/components/SocialMedia')
   },
   data: () => ({
     isTransparent: true
   }),
   methods: {
-    onScroll() {
+    onScroll () {
       this.isTransparent = window.pageYOffset < 200;
     }
   }

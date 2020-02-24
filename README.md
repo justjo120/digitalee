@@ -1,6 +1,6 @@
-# digital-llc
+# DigitaLee LLC
 
-> DigtaLee LLC Website
+> DigitaLee LLC Website
 
 ## Build Setup
 

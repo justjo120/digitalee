@@ -9,7 +9,9 @@
       </v-flex>
       <v-flex xs12 md6 pa-5>
         <base-bubble-1 />
-        <base-heading class="mb-5">Get In Touch</base-heading>
+        <base-heading class="mb-5">
+          Get In Touch
+        </base-heading>
 
         <v-sheet max-width="600" color="transparent">
           <v-text-field color="info" label="Name" solo flat />

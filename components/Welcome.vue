@@ -26,12 +26,14 @@
               ipiscin elit. Etiam vulputate augue vel felis gra
               vida porta. Lorem ipsum dolor sit amet, cons
               ectetur adipiscing elit.
-              <br />Lorem ipsum dolor sit amet, consectetur ad
+              <br>Lorem ipsum dolor sit amet, consectetur ad
               ipiscin elit. Etiam vulputate augue vel felis gra
               vida porta. Lorem ipsum dolor sit amet, cons
               ectetur adipiscing elit.
             </base-text>
-            <base-btn class="mt-4">Learn More!</base-btn>
+            <base-btn class="mt-4">
+              Learn More!
+            </base-btn>
           </v-flex>
         </v-layout>
 

@@ -11,11 +11,13 @@
         <v-layout align-center justify-center fill-height wrap>
           <v-flex xs12>
             <base-bubble-2 style="transform: translateX(55%)" />
-            <base-heading class="info--text">Services</base-heading>
+            <base-heading class="info--text">
+              Services
+            </base-heading>
 
             <base-text class="mb-5">
               Curabitur venenatis tortor erat, quis laoreet nis
-              <br />lobortis eget. Fusce tempor aucto.
+              <br>lobortis eget. Fusce tempor aucto.
             </base-text>
           </v-flex>
           <v-flex v-for="(service, i) in services" :key="i" md6 text-xs-center mb-3>
@@ -24,7 +26,9 @@
             </v-avatar>
             <base-text>
               <div class="mb-2" v-text="service.name" />
-              <div v-html="service.blurb" />
+              <div>
+                {{ service.blurb }}
+              </div>
             </base-text>
           </v-flex>
         </v-layout>
@@ -38,24 +42,24 @@ export default {
   data: () => ({
     services: [
       {
-        name: "Research",
-        icon: "mdi-clipboard-text-outline",
-        blurb: "Curabitur et nisi semper,<br> pellent e sque "
+        name: 'Research',
+        icon: 'mdi-clipboard-text-outline',
+        blurb: 'Curabitur et nisi semper,<br> pellent e sque '
       },
       {
-        name: "Design",
-        icon: "mdi-pencil-outline",
-        blurb: "Curabitur et nisi semper, <br>pellent."
+        name: 'Design',
+        icon: 'mdi-pencil-outline',
+        blurb: 'Curabitur et nisi semper, <br>pellent.'
       },
       {
-        name: "Development",
-        icon: "mdi-settings-outline",
-        blurb: "Curabitur et nisi semper, <br>pellent."
+        name: 'Development',
+        icon: 'mdi-settings-outline',
+        blurb: 'Curabitur et nisi semper, <br>pellent.'
       },
       {
-        name: "Support",
-        icon: "mdi-account",
-        blurb: "Curabitur et nisi semper, <br>pellent."
+        name: 'Support',
+        icon: 'mdi-account',
+        blurb: 'Curabitur et nisi semper, <br>pellent.'
       }
     ]
   })
