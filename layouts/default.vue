@@ -1,5 +1,5 @@
 <template>
-  <v-app dark>
+  <v-app>
     <v-img src="https://images.pexels.com/photos/1320684/pexels-photo-1320684.jpeg" />
     <v-content>
       <v-sheet>
@@ -20,7 +20,11 @@
       </v-sheet>
     </v-content>
     <v-footer app class="text-xs-center">
-      <span>&copy; DigitaLee LLC {{ new Date().getFullYear() }}</span>
+      <v-row class="d-flex justify-center">
+        <div>
+          <span>&copy; DigitaLee LLC {{ new Date().getFullYear() }}</span>
+        </div>
+      </v-row>
     </v-footer>
   </v-app>
 </template>

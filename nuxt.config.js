@@ -1,4 +1,5 @@
 import colors from 'vuetify/es5/util/colors';
+import brandColors from './assets/colors';
 
 export default {
   mode: 'universal',
@@ -82,13 +83,21 @@ export default {
       dark: true,
       themes: {
         dark: {
-          primary: colors.blue.darken2,
-          accent: colors.grey.darken3,
-          secondary: colors.amber.darken3,
+          primary: brandColors.brandPrimary,
+          accent: brandColors.brandAccent1,
+          secondary: brandColors.brandSecondary,
+          // info: brandColors.brand,
+          // warning: brandColors.brand,
+          // error: brandColors.brand,
+          // success: brandColors.brand,
+
+          // primary: colors.blue.darken2,
+          // accent: colors.grey.darken3,
+          // secondary: colors.amber.darken3,
           info: colors.teal.lighten1,
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
-          success: colors.green.accent3
+          success: colors.green.accent3,
         }
       }
     }
