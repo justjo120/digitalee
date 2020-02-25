@@ -1,23 +1,36 @@
 <template>
   <v-app>
-    <v-img src="https://images.pexels.com/photos/1320684/pexels-photo-1320684.jpeg" />
+    <v-parallax
+      src="https://images.pexels.com/photos/1320684/pexels-photo-1320684.jpeg"
+      height="1000"
+    />
     <v-content>
-      <v-sheet>
-        <v-card elevation="0" align-center>
-          <v-card-title primary-title class="d-flex justify-center">
-            <div class="display-3 font-weight-black">
-              DIGITALEE
-            </div>
-          </v-card-title>
-          <v-divider class="mx-5" />
-          <v-card-subtitle class="d-flex justify-center">
-            <div class="headline text-xs-center">
-              Helping You Navigate the Digital World
-            </div>
-          </v-card-subtitle>
-          <nuxt />
-        </v-card>
-      </v-sheet>
+      <v-row>
+        <v-layout class="d-flex justify-center align-content-center">
+          <v-flex xs10>
+            <v-row>
+              <v-col cols="12" class="d-flex justify-center">
+                <v-img
+                  :contain="true"
+                  max-width="40%"
+                  :src="require('@/assets/digitalee-logo.png')"
+                />
+              </v-col>
+            </v-row>
+            <v-divider class="mx-5" />
+            <v-row>
+              <v-col cols="12" class="d-flex justify-center">
+                <div class="headline text-xs-center">
+                  Navigating the Digital World
+                </div>
+              </v-col>
+            </v-row>
+          </v-flex>
+        </v-layout>
+      </v-row>
+      <v-row>
+        <nuxt />
+      </v-row>
     </v-content>
     <v-footer app class="text-xs-center">
       <v-row class="d-flex justify-center">
@@ -28,9 +41,9 @@
     </v-footer>
   </v-app>
 </template>
-
-<script>
-export default {
+<script lang="ts">
+import Vue from 'vue';
+export default Vue.extend({
   data () {
     return {
       clipped: false,
@@ -53,8 +66,9 @@ export default {
       rightDrawer: false,
       title: 'Vuetify.js'
     };
-  }
-};
+  },
+});
 </script>
-<style>
+
+<style scoped>
 </style>

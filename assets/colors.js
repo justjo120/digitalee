@@ -5,7 +5,8 @@ const brandColors = {
   brandAccent2: '#DBB13B',
   brandDark1: '#304B78',
   brandDark2: '#2D325A',
-  brandBlank: '#ffffff',
+  brandBlank: '#FFFFFF',
+  brandBackground: '#2D325A',
 };
 
 export default brandColors;

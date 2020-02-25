@@ -86,6 +86,7 @@ export default {
           primary: brandColors.brandPrimary,
           accent: brandColors.brandAccent1,
           secondary: brandColors.brandSecondary,
+          background: brandColors.brandBackground,
           // info: brandColors.brand,
           // warning: brandColors.brand,
           // error: brandColors.brand,

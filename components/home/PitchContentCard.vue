@@ -2,10 +2,13 @@
   <v-card class="pitch-card fill-height" elevation="0">
     <v-card-title class="d-flex justify-center align-content-center">
       <div class="title">
+        <v-icon v-if="icon">
+          {{ icon }}
+        </v-icon>
         {{ title }}
       </div>
     </v-card-title>
-    <v-card-text class="pt-5 text-justify fill-height">
+    <v-card-text class="d-flex flex-column justify-space-around text-justify fill-height">
       <span class="cyan--text text--lighten-5">
         {{ description }}
       </span>
@@ -28,6 +31,11 @@ export default Vue.extend({
       required: true
     },
     description: {
+      type: String,
+      required: false,
+      default: null
+    },
+    icon: {
       type: String,
       required: false,
       default: null
