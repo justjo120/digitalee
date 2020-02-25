@@ -49,7 +49,9 @@ export default Vue.extend({
 
 .pitch-card {
   .v-card__text {
-    background-color: $brand_dark1;
+    border-radius: 10px;
+    background: linear-gradient(145deg, $brand_dark1,$brand_background);
+    box-shadow:  31px 31px 59px $brand_background,-31px -31px 59px $brand_dark2;
   }
 }
 
