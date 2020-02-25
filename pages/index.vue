@@ -78,12 +78,12 @@ export default Vue.extend({
         icon: 'mdi-monitor-clean',
       }, {
         title: 'Digital Strategy',
-        description: 'Should you invest your marketing dollars in search marketing or social media? We’re here to bring you industry experienced marketers to help you find the best mix of digital presence to maximize your presence and keep track of your returns.',
+        description: 'Should you invest your marketing dollars in search marketing or social media? We bring industry experienced marketers to help you find the best mix of digital presence to maximize your presence and keep track of your returns.',
         backgroundImage: 'aerial-photo-of-boat-on-sea-1655166.jpg',
         icon: 'mdi-map-check'
       }, {
         title: 'Branding',
-        description: 'Your Brand is your company’s DNA. Let us help you create a cohesive, easy to manage online presence with a custom branding kit including a color scheme, fonts, and other useful creative materials to keep you consistent as you set yourself apart.',
+        description: 'Your Brand is your company’s DNA. We can create a cohesive, easy to manage online presence with a custom branding kit including a color scheme, fonts, and other useful creative materials to keep you consistent as you set yourself apart.',
         backgroundImage: 'aerial-photo-of-boat-on-sea-1655166.jpg',
         icon: 'mdi-dna',
       }],
