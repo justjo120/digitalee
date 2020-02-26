@@ -18,34 +18,6 @@
           />
         </v-col>
       </v-row>
-      <br>
-      <v-row>
-        <v-col>
-          <v-card
-            elevation="0"
-          >
-            <v-card-title class="d-flex justify-center">
-              <div class="title">
-                Portfolio
-              </div>
-            </v-card-title>
-          </v-card>
-        </v-col>
-      </v-row>
-      <br>
-      <v-row>
-        <v-col>
-          <v-card
-            elevation="0"
-          >
-            <v-card-title class="d-flex justify-center">
-              <div class="title">
-                About
-              </div>
-            </v-card-title>
-          </v-card>
-        </v-col>
-      </v-row>
     </v-flex>
   </v-layout>
 </template>

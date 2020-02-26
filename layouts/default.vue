@@ -2,32 +2,9 @@
   <v-app>
     <v-parallax
       src="https://images.pexels.com/photos/1320684/pexels-photo-1320684.jpeg"
-      height="1000"
+      height="500"
     />
     <v-content>
-      <v-row>
-        <v-layout class="d-flex justify-center align-content-center">
-          <v-flex xs10>
-            <v-row>
-              <v-col cols="12" class="d-flex justify-center">
-                <v-img
-                  :contain="true"
-                  max-width="55%"
-                  :src="require('@/assets/digitalee-logo.png')"
-                />
-              </v-col>
-            </v-row>
-            <v-divider class="mx-5" />
-            <v-row>
-              <v-col cols="12" class="d-flex justify-center">
-                <div class="headline text-xs-center">
-                  Navigating the Digital World
-                </div>
-              </v-col>
-            </v-row>
-          </v-flex>
-        </v-layout>
-      </v-row>
       <v-tabs
         v-model="tab"
         background-color="transparent"
@@ -53,6 +30,29 @@
           </v-card>
         </v-tab-item>
       </v-tabs-items>
+       <v-row>
+        <v-layout class="d-flex justify-center align-content-center">
+          <v-flex xs10>
+            <v-row>
+              <v-col cols="12" class="d-flex justify-center">
+                <v-img
+                  :contain="true"
+                  max-width="55%"
+                  :src="require('@/assets/digitalee-logo.png')"
+                />
+              </v-col>
+            </v-row>
+            <v-divider class="mx-5" />
+            <v-row>
+              <v-col cols="12" class="d-flex justify-center">
+                <div class="headline text-xs-center">
+                  Navigating the Digital World
+                </div>
+              </v-col>
+            </v-row>
+          </v-flex>
+        </v-layout>
+      </v-row>
       <v-row>
         <nuxt />
       </v-row>
@@ -71,9 +71,6 @@ import Vue from 'vue';
 export default Vue.extend({
   data () {
     return {
-      clipped: false,
-      drawer: false,
-      fixed: false,
       tab: null,
       items: ['About', 'Portfolio', 'Contact'],
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
