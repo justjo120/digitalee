@@ -45,7 +45,7 @@ export default Vue.extend({
     return {
       contentItems: [{
         title: 'Web Development',
-        description: 'From WordPress websites, progressive web apps, to custom SaaS solutions, we can help with planning, architecture, UX/UI design, as well as full-stack development',
+        description: 'From static single-page websites and progressive web apps to custom SaaS solutions, we can help with planning, architecture, UX/UI design, as well as full-stack development.',
         backgroundImage: 'aerial-photo-of-boat-on-sea-1655166.jpg',
         icon: 'mdi-monitor-clean',
       }, {
