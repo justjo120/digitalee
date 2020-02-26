@@ -28,6 +28,31 @@
           </v-flex>
         </v-layout>
       </v-row>
+      <v-tabs
+        v-model="tab"
+        background-color="transparent"
+        grow
+      >
+        <v-tab
+          v-for="item in items"
+          :key="item"
+        >
+          {{ item }}
+        </v-tab>
+      </v-tabs>
+
+      <v-tabs-items v-model="tab">
+        <v-tab-item
+          v-for="item in items"
+          :key="item"
+        >
+          <v-card
+            flat
+          >
+            <v-card-text>{{ text }}</v-card-text>
+          </v-card>
+        </v-tab-item>
+      </v-tabs-items>
       <v-row>
         <nuxt />
       </v-row>
@@ -49,22 +74,9 @@ export default Vue.extend({
       clipped: false,
       drawer: false,
       fixed: false,
-      items: [
-        {
-          icon: 'mdi-apps',
-          title: 'Welcome',
-          to: '/'
-        },
-        {
-          icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire'
-        }
-      ],
-      miniVariant: false,
-      right: true,
-      rightDrawer: false,
-      title: 'Vuetify.js'
+      tab: null,
+      items: ['About', 'Portfolio', 'Contact'],
+      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
     };
   },
 });

@@ -73,17 +73,17 @@ export default Vue.extend({
     return {
       contentItems: [{
         title: 'Web Development',
-        description: 'From WordPress to a custom SaaS solution, we can help with planning, architecture, UX/UI design, as well as full-stack development',
+        description: 'From WordPress websites, progressive web apps, to custom SaaS solutions, we can help with planning, architecture, UX/UI design, as well as full-stack development',
         backgroundImage: 'aerial-photo-of-boat-on-sea-1655166.jpg',
         icon: 'mdi-monitor-clean',
       }, {
         title: 'Digital Strategy',
-        description: 'Should you invest your marketing dollars in search marketing or social media? We bring industry experienced marketers to help you find the best mix of digital presence to maximize your returns.',
+        description: 'We bring industry experienced marketers to help you find the best mix of digital presence to maximize your returns.',
         backgroundImage: 'aerial-photo-of-boat-on-sea-1655166.jpg',
         icon: 'mdi-map-check'
       }, {
         title: 'Branding',
-        description: 'Your Brand is your company’s DNA. We can create a cohesive, easy to manage online presence with a custom branding kit including a color scheme, fonts, and other creative materials to keep you consistent as you set yourself apart.',
+        description: 'Your brand is your company’s DNA. We can create a cohesive, easy to manage online presence with a custom branding kit including a color scheme, fonts, and other creative materials to keep you consistent as you set yourself apart.',
         backgroundImage: 'aerial-photo-of-boat-on-sea-1655166.jpg',
         icon: 'mdi-dna',
       }],
