@@ -12,7 +12,7 @@
               <v-col cols="12" class="d-flex justify-center">
                 <v-img
                   :contain="true"
-                  max-width="40%"
+                  max-width="55%"
                   :src="require('@/assets/digitalee-logo.png')"
                 />
               </v-col>
