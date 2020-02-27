@@ -30,7 +30,7 @@
           </v-card>
         </v-tab-item>
       </v-tabs-items>
-       <v-row>
+      <v-row>
         <v-layout class="d-flex justify-center align-content-center">
           <v-flex xs10>
             <v-row>
