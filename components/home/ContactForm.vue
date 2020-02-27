@@ -44,8 +44,9 @@
   </v-card>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import Vue from 'vue';
+export default Vue.extend({
   props: {
     dialog: {
       type: String,
@@ -55,9 +56,9 @@ export default {
   },
   data: () => {},
   methods: {
-    closeDialog () {
+    closeDialog (): void {
       this.$store.commit('quote/setDisplay', false);
     }
   }
-};
+});
 </script>
