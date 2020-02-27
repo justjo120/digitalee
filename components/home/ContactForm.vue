@@ -7,13 +7,13 @@
       <v-container>
         <v-row>
           <v-col cols="12" sm="6" md="4">
-            <v-text-field label="First name*" required></v-text-field>
+            <v-text-field label="First name*" required />
           </v-col>
           <v-col cols="12" sm="6" md="4">
-            <v-text-field label="Last name*" required></v-text-field>
+            <v-text-field label="Last name*" required />
           </v-col>
           <v-col cols="12">
-            <v-text-field label="Email*" required></v-text-field>
+            <v-text-field label="Email*" required />
           </v-col>
 
           <v-col cols="12" sm="6">
@@ -26,14 +26,14 @@
               ]"
               label="I'm interested in..."
               multiple
-            ></v-autocomplete>
+            />
           </v-col>
         </v-row>
       </v-container>
       <small>*indicates required field</small>
     </v-card-text>
     <v-card-actions>
-      <v-spacer></v-spacer>
+      <v-spacer />
       <v-btn color="blue darken-1" text @click="closeDialog">
         Close
       </v-btn>
@@ -44,14 +44,21 @@
   </v-card>
 </template>
 
-<script>
-export default {
-  props: ['dialog'],
+<script lang="ts">
+import Vue from 'vue';
+export default Vue.extend({
+  props: {
+    dialog: {
+      type: String,
+      default: null,
+      required: false,
+    }
+  },
   data: () => {},
   methods: {
-    closeDialog() {
+    closeDialog (): void {
       this.$store.commit('quote/setDisplay', false);
     }
   }
-};
+});
 </script>
