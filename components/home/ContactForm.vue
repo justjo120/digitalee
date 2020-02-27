@@ -35,9 +35,6 @@
     <v-card-actions>
       <v-spacer />
       <v-btn color="blue darken-1" text @click="closeDialog">
-        Close
-      </v-btn>
-      <v-btn color="blue darken-1" text @click="closeDialog">
         Submit
       </v-btn>
     </v-card-actions>
@@ -56,9 +53,6 @@ export default Vue.extend({
   },
   data: () => {},
   methods: {
-    closeDialog (): void {
-      this.$store.commit('quote/setDisplay', false);
     }
-  }
-});
+  });
 </script>

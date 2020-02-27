@@ -5,7 +5,7 @@
       height="500"
     />
     <v-content>
-      <v-tabs v-model="tab" background-color="transparent" grow>
+      <v-tabs v-model="tab" background-color="transparent" dark color="white" grow>
         <v-tab v-for="item in items" :key="item">
           {{ item }}
         </v-tab>
@@ -75,5 +75,5 @@ export default Vue.extend({
 });
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 </style>
