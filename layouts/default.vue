@@ -1,16 +1,38 @@
 <template>
-  <v-app>
-    <v-parallax
-      src="https://images.pexels.com/photos/1320684/pexels-photo-1320684.jpeg"
-      height="500"
-    />
+  <v-app class="overflow-hidden">
+    <v-card class="overflow-hidden">
+      <v-app-bar
+        app
+        src="https://images.pexels.com/photos/1320684/pexels-photo-1320684.jpeg"
+        dense
+      >
+        <template v-slot:img="{ props }">
+          <v-img v-bind="props" gradient="to top right, rgba(100,115,201,.7), rgba(25,32,72,.7)" />
+        </template>
+        <v-tabs
+          centered
+          color="white"
+        >
+          <v-tab
+            v-for="item in items"
+            :key="item.name"
+            class="px-0"
+            :to="item.route"
+            nuxt
+          >
+            <span class="overline">
+              {{ item.name }}
+            </span>
+          </v-tab>
+        </v-tabs>
+      </v-app-bar>
+    </v-card>
     <v-content>
-      <v-tabs v-model="tab" background-color="transparent" dark color="white" grow>
-        <v-tab v-for="item in items" :key="item">
-          {{ item }}
-        </v-tab>
-      </v-tabs>
-      <v-row>
+      <v-parallax
+        src="https://images.pexels.com/photos/1320684/pexels-photo-1320684.jpeg"
+        height="500"
+      />
+      <v-row class="pt-5">
         <v-layout class="d-flex justify-center align-content-center">
           <v-flex xs10>
             <v-row>
@@ -33,32 +55,13 @@
           </v-flex>
         </v-layout>
       </v-row>
-      <v-row>
-        <v-layout class="d-flex justify-center align-content-center">
-          <v-flex xs10>
-            <v-col>
-              <v-tabs-items v-model="tab">
-                <v-tab-item v-for="item in items" :key="item">
-                  <div>
-                    {{ text }}
-                  </div>
-                </v-tab-item>
-              </v-tabs-items>
-            </v-col>
-          </v-flex>
-        </v-layout>
-      </v-row>
       <br>
-      <v-row>
-        <nuxt />
-      </v-row>
+      <nuxt />
     </v-content>
-    <v-footer app class="text-xs-center">
-      <v-row class="d-flex justify-center">
-        <div>
-          <span>&copy; DigitaLee LLC {{ new Date().getFullYear() }}</span>
-        </div>
-      </v-row>
+    <v-footer app>
+      <v-col xs12 class="py-0 text-center caption">
+        <span>&copy; DigitaLee LLC {{ new Date().getFullYear() }}</span>
+      </v-col>
     </v-footer>
   </v-app>
 </template>
@@ -68,8 +71,12 @@ export default Vue.extend({
   data () {
     return {
       tab: null,
-      items: ['Home', 'About', 'Portfolio', 'Contact'],
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      items: [
+        { name: 'Home', route: '/' },
+        { name: 'About', route: '/about' },
+        { name: 'Portfolio', route: '/portfolio' },
+        { name: 'Contact', route: '/contact' },
+      ],
     };
   },
 });
