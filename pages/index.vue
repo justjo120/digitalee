@@ -2,19 +2,6 @@
   <v-row>
     <v-layout class="d-flex justify-center align-content-center">
       <v-flex xs10>
-        <v-col class="text-justify">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Donec eget tellus est.
-            Ut aliquam non mauris a ullamcorper.
-            Aliquam rhoncus sit amet nisi eget iaculis.
-            Phasellus nec bibendum tortor, eget aliquet tortor.
-          </p>
-        </v-col>
-      </v-flex>
-    </v-layout>
-    <v-layout class="d-flex justify-center align-content-center">
-      <v-flex xs10>
         <v-row>
           <v-col
             v-for="(content, idx) in contentItems"

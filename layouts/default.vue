@@ -36,7 +36,7 @@
       <v-container fluid>
         <v-row class="pt-5">
           <v-layout class="d-flex justify-center align-content-center">
-            <v-flex xs10>
+            <v-flex xs12>
               <v-row>
                 <v-col cols="12" class="d-flex justify-center">
                   <v-img
