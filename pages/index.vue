@@ -15,16 +15,14 @@
     </v-layout>
     <v-layout class="d-flex justify-center align-content-center">
       <v-flex xs10>
-        <v-row justify="center" class="d-flex flex-grow flex-shrink flex-basis">
+        <v-row>
           <v-col
             v-for="(content, idx) in contentItems"
             :key="idx"
             cols="12"
             md="4"
-            class="flex-grow"
           >
             <pitch-content-card
-              class="fill-height"
               :icon="content.icon"
               :title="content.title"
               :description="content.description"
