@@ -1,25 +1,38 @@
 <template>
-  <v-layout class="d-flex justify-center align-content-center">
-    <v-flex xs10>
-      <v-row justify="center" class="d-flex flex-grow flex-shrink flex-basis">
-        <v-col
-          v-for="(content, idx) in contentItems"
-          :key="idx"
-          cols="12"
-          md="4"
-          class="flex-grow"
-        >
-          <pitch-content-card
-            class="fill-height"
-            :icon="content.icon"
-            :title="content.title"
-            :description="content.description"
-            :background-image="content.backgroundImage"
-          />
+  <v-row>
+    <v-layout class="d-flex justify-center align-content-center">
+      <v-flex xs10>
+        <v-col class="text-justify">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Donec eget tellus est.
+            Ut aliquam non mauris a ullamcorper.
+            Aliquam rhoncus sit amet nisi eget iaculis.
+            Phasellus nec bibendum tortor, eget aliquet tortor.
+          </p>
         </v-col>
-      </v-row>
-    </v-flex>
-  </v-layout>
+      </v-flex>
+    </v-layout>
+    <v-layout class="d-flex justify-center align-content-center">
+      <v-flex xs10>
+        <v-row>
+          <v-col
+            v-for="(content, idx) in contentItems"
+            :key="idx"
+            cols="12"
+            md="4"
+          >
+            <pitch-content-card
+              :icon="content.icon"
+              :title="content.title"
+              :description="content.description"
+              :background-image="content.backgroundImage"
+            />
+          </v-col>
+        </v-row>
+      </v-flex>
+    </v-layout>
+  </v-row>
 </template>
 
 <script lang="ts">

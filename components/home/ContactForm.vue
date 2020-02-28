@@ -1,7 +1,9 @@
 <template>
-  <v-card>
-    <v-card-title>
-      <span class="headline">Get in Touch!</span>
+  <v-card flat>
+    <v-card-title class="d-flex justify-center">
+      <div>
+        <span class="headline">Get in Touch!</span>
+      </div>
     </v-card-title>
     <v-card-text>
       <v-container>
@@ -51,8 +53,10 @@ export default Vue.extend({
       required: false,
     }
   },
-  data: () => {},
+  data () {
+    return {};
+  },
   methods: {
-    }
-  });
+  }
+});
 </script>

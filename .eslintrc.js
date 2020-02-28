@@ -1,5 +1,6 @@
 module.exports = {
   root: true,
+  ignorePatterns: ["static/", "node_modules/", "dist/"],
   env: {
     browser: true,
     node: true
