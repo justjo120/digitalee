@@ -81,6 +81,7 @@
     "skipLibCheck": true,
   },
   "exclude": [
-    "static/sw.js"
+    "static/sw.js",
+    "node_modules/"
   ]
 }

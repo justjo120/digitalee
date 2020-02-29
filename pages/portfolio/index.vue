@@ -1,13 +1,13 @@
 <template>
   <v-row>
     <v-col cols="12" class="d-flex justify-center">
-      <div class="display-1">
-        Coming Soon!
+      <div class="headline">
+        Coming Soon
       </div>
     </v-col>
     <v-col cols="12">
       <v-skeleton-loader
-        type="image"
+        type="list-item-three-line"
       />
     </v-col>
   </v-row>
