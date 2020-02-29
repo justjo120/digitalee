@@ -7,7 +7,10 @@
     </v-col>
     <v-col cols="12">
       <v-skeleton-loader
-        type="list-item-three-line"
+        type="list-item-avatar-three-line"
+      />
+       <v-skeleton-loader
+        type="list-item-two-line"
       />
     </v-col>
   </v-row>
