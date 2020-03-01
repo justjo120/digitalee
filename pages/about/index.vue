@@ -6,7 +6,7 @@
       </h2>
     </v-col>
     <v-col cols="12">
-      <p class="text-justify">
+      <p class="text-justify ma-2">
         DigitaLee aims to bring quality service to help your business navigate through the ever changing digital world.
       </p>
     </v-col>
