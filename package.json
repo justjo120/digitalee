@@ -23,8 +23,7 @@
     "@nuxtjs/dotenv": "^1.4.1",
     "@nuxtjs/pwa": "^3.0.0-beta.20",
     "@vue/composition-api": "^0.4.0",
-    "nuxt": "^2.11.0",
-    "vue-resource": "^1.5.1"
+    "nuxt": "^2.11.0"
   },
   "devDependencies": {
     "@nuxt/typescript-build": "^0.5.7",

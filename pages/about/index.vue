@@ -29,7 +29,7 @@
         >
           <v-img
             height="200"
-            src="https://images.pexels.com/photos/1320684/pexels-photo-1320684.jpeg"
+            :src="trait.background || defaults.background"
           >
             <v-expand-transition>
               <div
@@ -54,20 +54,27 @@ import Vue from 'vue';
 export default Vue.extend({
   data () {
     return {
+      default: {
+        background: 'https://images.pexels.com/photos/1320684/pexels-photo-1320684.jpeg',
+      },
       traits: [{
         text: 'Timely',
+        background: null,
         icon: 'mdi-clock-check-outline',
         size: 'display-2',
       }, {
         text: 'Communication',
+        background: null,
         icon: 'mdi-clock-check-outline',
         size: 'display-1',
       }, {
         text: 'Co-Authors',
+        background: null,
         icon: 'mdi-clock-check-outline',
         size: 'display-2',
       }, {
         text: 'Data Driven',
+        background: null,
         icon: 'mdi-clock-check-outline',
         size: 'display-2',
       }]
