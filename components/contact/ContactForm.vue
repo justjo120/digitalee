@@ -17,63 +17,61 @@
       </p>
     </v-card-subtitle>
     <v-card-text>
-      <v-flex class="col-xs-12 col-md-6 offset-md-3">
-        <v-form v-model="validForm">
-          <v-row class="d-flex justify-space-around">
-            <v-col cols="12">
-              <v-text-field
-                v-model="contactData.firstName"
-                :disabled="isDisabled"
-                :rules="formRules.firstName"
-                color="white"
-                label="First name*"
-                required
-              />
-            </v-col>
-            <v-col cols="12">
-              <v-text-field
-                v-model="contactData.lastName"
-                :disabled="isDisabled"
-                :rules="formRules.lastName"
-                color="white"
-                label="Last name*"
-                required
-              />
-            </v-col>
-            <v-col cols="12">
-              <v-text-field
-                v-model="contactData.email"
-                :disabled="isDisabled"
-                :rules="formRules.email"
-                color="white"
-                label="Email*"
-                required
-              />
-            </v-col>
-
-            <v-col cols="12">
-              <v-autocomplete
-                v-model="contactData.selections"
-                :disabled="isDisabled"
-                :items="selectionItems"
-                :rules="formRules.selections"
-                label="I'm interested in hiring you for..."
-                multiple
-                color="white"
-              />
-            </v-col>
-            <v-col cols="12" class="d-flex justify-center align-content-center">
-              <div class="font-italic">
-                *indicates required field
-              </div>
-              <v-spacer />
-              <v-btn :disabled="isDisabled" elevation="5" color="white" text @click="sendEmail">
-                Send
-              </v-btn>
-            </v-col>
-          </v-row>
-        </v-form>
-      </v-flex>
+      <v-form v-model="validForm">
+        <v-row class="d-flex flex-column align-center">
+          <v-col cols="6">
+            <v-text-field
+              v-model="contactData.firstName"
+              :disabled="isDisabled"
+              :rules="formRules.firstName"
+              color="white"
+              label="First name*"
+              required
+            />
+          </v-col>
+          <v-col cols="6">
+            <v-text-field
+              v-model="contactData.lastName"
+              :disabled="isDisabled"
+              :rules="formRules.lastName"
+              color="white"
+              label="Last name*"
+              required
+            />
+          </v-col>
+          <v-col cols="6">
+            <v-text-field
+              v-model="contactData.email"
+              :disabled="isDisabled"
+              :rules="formRules.email"
+              color="white"
+              label="Email*"
+              required
+            />
+          </v-col>
+          <v-col cols="6">
+            <v-autocomplete
+              v-model="contactData.selections"
+              :disabled="isDisabled"
+              :items="selectionItems"
+              :rules="formRules.selections"
+              label="I'm interested in hiring you for..."
+              multiple
+              color="white"
+            />
+          </v-col>
+          <v-col cols="6" class="d-flex justify-center align-content-center">
+            <div class="font-italic">
+              *indicates required field
+            </div>
+            <v-spacer />
+            <v-btn :disabled="isDisabled" elevation="5" color="white" text @click="sendEmail">
+              Send
+            </v-btn>
+          </v-col>
+        </v-row>
+      </v-form>
+      |
     </v-card-text>
   </v-card>
 </template>
