@@ -2,20 +2,20 @@
   <v-card flat>
     <v-card-title class="d-flex justify-center">
       <div>
-        <span class="headline">Get in Touch!</span>
+        <span class="subheading">Get in Touch!</span>
       </div>
     </v-card-title>
     <v-card-text>
       <v-container>
         <v-row>
           <v-col cols="12" sm="6" md="4">
-            <v-text-field label="First name*" required />
+            <v-text-field color="white" label="First name*" required />
           </v-col>
           <v-col cols="12" sm="6" md="4">
-            <v-text-field label="Last name*" required />
+            <v-text-field color="white" label="Last name*" required />
           </v-col>
-          <v-col cols="12">
-            <v-text-field label="Email*" required />
+          <v-col cols="12" sm="6">
+            <v-text-field color="white" label="Email*" required />
           </v-col>
 
           <v-col cols="12" sm="6">
@@ -26,17 +26,21 @@
                 'Branding',
                 'Other'
               ]"
-              label="I'm interested in..."
+              label="I'm interested in hiring you for..."
               multiple
+              color="white"
             />
           </v-col>
+          <div class="font-italic">
+            *indicates required field
+          </div>
         </v-row>
       </v-container>
     </v-card-text>
     <v-card-actions>
       <v-spacer />
-      <v-btn color="blue darken-1" text @click="closeDialog">
-        Submit
+      <v-btn elevation="5" color="white" text @click="sendEmail">
+        Send
       </v-btn>
     </v-card-actions>
   </v-card>

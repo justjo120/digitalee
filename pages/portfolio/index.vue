@@ -1,7 +1,7 @@
 <template>
   <v-row>
     <v-col cols="12" class="d-flex justify-center">
-      <div class="headline">
+      <div class="headline text-uppercase">
         Coming Soon
       </div>
     </v-col>
@@ -9,7 +9,7 @@
       <v-skeleton-loader
         type="list-item-avatar-three-line"
       />
-       <v-skeleton-loader
+      <v-skeleton-loader
         type="list-item-two-line"
       />
     </v-col>
