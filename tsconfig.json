@@ -81,7 +81,9 @@
     "skipLibCheck": true,
   },
   "exclude": [
-    "static/sw.js",
-    "node_modules/"
+    "static",
+    "node_modules",
+    "dist",
+    ".nuxt"
   ]
 }
