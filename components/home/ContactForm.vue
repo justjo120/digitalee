@@ -57,7 +57,17 @@ export default Vue.extend({
     }
   },
   data () {
-    return {};
+    return {
+      FormData { 
+        var formData = new FormData();
+
+        this.$http.post('/someUrl', formData).then(response => {
+    // success callback
+  }, response => {``
+    // error callback
+  });
+      };
+    }
   },
   methods: {
   }
