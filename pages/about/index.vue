@@ -1,9 +1,9 @@
 <template>
   <v-row>
     <v-col cols="12" class="d-flex justify-center">
-      <h2>
+      <div class="title text-uppercase">
         About
-      </h2>
+      </div>
     </v-col>
     <v-col cols="12">
       <p class="text-justify ma-2">

@@ -1,7 +1,7 @@
 <template>
   <v-row>
     <v-col cols="12" class="d-flex justify-center">
-      <div class="headline text-uppercase">
+      <div class="title text-uppercase font-italic">
         Coming Soon
       </div>
     </v-col>

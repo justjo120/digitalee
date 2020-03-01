@@ -2,7 +2,7 @@
   <v-card flat>
     <v-card-title class="d-flex justify-center">
       <div>
-        <span class="subheading">Get in Touch!</span>
+        <span class="title text-uppercase">Get in Touch</span>
       </div>
     </v-card-title>
     <v-card-text>
@@ -56,20 +56,21 @@ export default Vue.extend({
       required: false,
     }
   },
-  data () {
-    return {
-      FormData { 
-        var formData = new FormData();
-
-        this.$http.post('/someUrl', formData).then(response => {
-    // success callback
-  }, response => {``
-    // error callback
-  });
-      };
-    }
-  },
-  methods: {
-  }
+  // data () {
+  //   return {
+  //     FormData {
+  //       var formData = new FormData();
+  //       this.$http.post('/someUrl', formData).then(response => {
+  //   // success callback
+  // }, response => {``
+  //   // error callback
+  // });
+  //     };
+  //   }
+  // },
+  // methods: {
+  //   sendEmail {
+  //   };
+  // }
 });
 </script>
