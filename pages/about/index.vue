@@ -54,7 +54,7 @@ import Vue from 'vue';
 export default Vue.extend({
   data () {
     return {
-      default: {
+      defaults: {
         background: 'https://images.pexels.com/photos/1320684/pexels-photo-1320684.jpeg',
       },
       traits: [{
