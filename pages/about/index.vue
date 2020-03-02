@@ -5,15 +5,15 @@
         About
       </div>
     </v-col>
-    <v-col cols="12">
-      <p class="text-justify ma-2">
+    <v-col cols="12" class="d-flex justify-center">
+      <div class="">
         DigitaLee aims to bring quality service to help your business navigate through the ever changing digital world.
-      </p>
+      </div>
     </v-col>
     <br>
     <v-col cols="12" class="d-flex justify-center">
       <h3>
-        Guiding Principles
+        DigitaLee Values
       </h3>
     </v-col>
     <v-col
@@ -51,6 +51,7 @@
 
 <script lang="ts">
 import Vue from 'vue';
+
 export default Vue.extend({
   data () {
     return {
@@ -58,23 +59,23 @@ export default Vue.extend({
         background: 'https://images.pexels.com/photos/1320684/pexels-photo-1320684.jpeg',
       },
       traits: [{
-        text: 'Timely',
-        background: null,
+        text: 'Responsive',
+        background: require('@/assets/responsivevalue.png'),
         icon: 'mdi-clock-check-outline',
         size: 'display-2',
       }, {
-        text: 'Communication',
-        background: null,
+        text: 'Communicative',
+        background: require('@/assets/communicationvalue.png'),
         icon: 'mdi-clock-check-outline',
-        size: 'display-1',
+        size: 'display-2',
       }, {
-        text: 'Co-Authors',
-        background: null,
+        text: 'Collaborative',
+        background: require('@/assets/collaborationvalue.png'),
         icon: 'mdi-clock-check-outline',
         size: 'display-2',
       }, {
         text: 'Data Driven',
-        background: null,
+        background: require('@/assets/datadrivenvalue.png'),
         icon: 'mdi-clock-check-outline',
         size: 'display-2',
       }]
