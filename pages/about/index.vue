@@ -6,7 +6,7 @@
       </div>
     </v-col>
     <v-col cols="12" class="d-flex justify-center">
-      <div class="">
+      <div class="pa-2">
         DigitaLee aims to bring quality service to help your business navigate through the ever changing digital world.
       </div>
     </v-col>
