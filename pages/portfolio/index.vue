@@ -10,7 +10,7 @@
         type="list-item-avatar-three-line"
       />
       <v-skeleton-loader
-        type="list-item-two-line"
+        type="list-item-three-line"
       />
     </v-col>
   </v-row>
