@@ -12,6 +12,9 @@
       <v-skeleton-loader
         type="list-item-three-line"
       />
+      <v-skeleton-loader
+        type="list-item-two-line"
+      />
     </v-col>
   </v-row>
 </template>
