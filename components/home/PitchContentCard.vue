@@ -8,7 +8,7 @@
         {{ title }}
       </div>
     </v-card-title>
-    <v-card-text max-height="160" class="pt-5 d-flex flex-column justify-space-around text-justify pitch-card-text fill-height">
+    <v-card-text max-height="170" class="pt-5 d-flex flex-column justify-space-around text-justify pitch-card-text fill-height">
       <span class="cyan--text text--lighten-5">
         {{ description }}
       </span>
